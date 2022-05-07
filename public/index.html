@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himari</title>
+    <link rel="stylesheet" href="/cdn/stylesheets/himari.css" />
+    <link rel="stylesheet" href="/cdn/stylesheets/foundation.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css"
+    />
+  </head>
+  <body>
+    <embed
+      src="https://cdn.discordapp.com/attachments/965925368433377310/972596236559466506/SchoolDay1.mp3"
+      loop="true"
+      autostart="true"
+      width="2"
+      height="0"
+    />
+    <div class="header">
+      <img src="/cdn/assets/Logo.png" class="branding" />
+      <img src="/cdn/assets/Park.png" class="header_img" />
+    </div>
+    <div class="main">
+      <div class="navigation">
+        <div class="grid-x">
+          <div class="cell auto">
+            <a href="#Story"
+              ><i class="fad fa-book-open-cover"></i>&nbsp; Story</a
+            >
+          </div>
+          <div class="cell auto">
+            <a onclick="unready()"
+              ><i class="fad fa-user-group-crown"></i>&nbsp; Characters</a
+            >
+          </div>
+          <div class="cell auto">
+            <a href="#Download"
+              ><i class="fad fa-download"></i>&nbsp; Download</a
+            >
+          </div>
+          <div class="cell auto">
+            <a href="https://discord.gg/QtTRtBBXGw"
+              ><i class="fab fa-discord"></i>&nbsp; Discord</a
+            >
+          </div>
+          <div class="cell auto">
+            <a href="https://www.youtube.com/channel/UCpwlrAZsGsnWAcIQ34-X-Jg"
+              ><i class="fab fa-youtube"></i>&nbsp; YouTube</a
+            >
+          </div>
+        </div>
+      </div>
+      <br />
+      <div
+        class="card"
+        id="Story"
+        style="background-image: url('/cdn/assets/School.png')"
+      >
+        <img
+          src="/cdn/assets/Relax.png"
+          class="photo"
+          style="right: -120px; width: 220px; transform: rotate(-20deg)"
+        />
+        <img
+          src="/cdn/assets/Corridor.png"
+          class="photo"
+          style="
+            right: -100px;
+            top: 40px;
+            width: 220px;
+            transform: rotate(20deg);
+          "
+        />
+        <img
+          src="/cdn/assets/Class.png"
+          class="photo"
+          style="
+            bottom: 0;
+            left: -120px;
+            width: 220px;
+            transform: rotate(-20deg);
+          "
+        />
+        <img
+          src="/cdn/assets/Library.png"
+          class="photo"
+          style="
+            left: -100px;
+            bottom: 40px;
+            width: 220px;
+            transform: rotate(20deg);
+          "
+        />
+        <div class="body">
+          <div class="grid-x grid-margin-x align-middle">
+            <div class="cell medium-6">
+              <img src="/cdn/assets/Story.png" style="position: relative" />
+            </div>
+            <div class="cell auto">
+              <img
+                src="/cdn/assets/Paper.png"
+                style="
+                  border-radius: 2px;
+                  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+                  position: relative;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div
+        class="card"
+        id="Download"
+        style="
+          background-image: url('/cdn/assets/Corridor.png');
+          min-height: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          src="/cdn/assets/Relax.png"
+          class="photo"
+          style="right: -120px; width: 220px; transform: rotate(-20deg)"
+        />
+        <img
+          src="/cdn/assets/Infirmary.png"
+          class="photo"
+          style="
+            right: -100px;
+            top: 40px;
+            width: 220px;
+            transform: rotate(20deg);
+          "
+        />
+        <img
+          src="/cdn/assets/Class.png"
+          class="photo"
+          style="
+            bottom: 0;
+            left: -120px;
+            width: 220px;
+            transform: rotate(-20deg);
+          "
+        />
+        <img
+          src="/cdn/assets/School.png"
+          class="photo"
+          style="
+            left: -100px;
+            bottom: 40px;
+            width: 220px;
+            transform: rotate(20deg);
+          "
+        />
+        <div class="body">
+          <div class="grid-x grid-margin-x align-middle">
+            <div class="cell medium-6">
+              <img src="/cdn/assets/Download.png" style="position: relative" />
+            </div>
+            <div class="cell auto text-center">
+              <!--
+                <a href="#" class="button">
+                <i class="fad fa-download"></i>&nbsp; Download (x64) (<i
+                  class="fab fa-windows"
+                ></i
+                >)
+              </a>
+              -->
+              <img
+                src="/cdn/assets/DownloadText.png"
+                style="position: relative"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div
+        class="text-center"
+        style="
+          font-size: 18px;
+          font-weight: 600;
+          color: #ffffff;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+          -webkit-text-stroke-width: 0.5px;
+          -webkit-text-stroke-color: rgba(0, 0, 0, 0.8);
+        "
+      >
+        Created with &nbsp;<i class="fas fa-heart"></i>&nbsp; and
+        <u>mang0</u> in cooperation with <u>Nova</u> &mdash; &copy; Copyright
+        Himari 2022. All rights reserved.
+      </div>
+      <br />
+    </div>
+    <script>
+      function unready() {
+        alert(
+          "This section is currently not ready yet. Please check back later!"
+        );
+      }
+    </script>
+  </body>
+</html>

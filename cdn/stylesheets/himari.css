@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: linear-gradient(to bottom, #ffffff, #86d27b) !important;
+  color: #2c2c2c;
+}
+
+.header {
+  margin: 0 auto;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.header .header_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  top: -280px;
+}
+
+.branding {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 0 14px;
+  max-width: 900px;
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to top, #7abd70, #86d27b);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  height: 56px;
+  margin-top: -70px;
+}
+.navigation a {
+  display: block;
+  height: 54px;
+  line-height: 52px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navigation a:hover {
+  border-color: #ffffff;
+}
+
+.card {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.card .body {
+  padding: 18px;
+}
+
+.photo {
+  position: absolute;
+  border: 6px solid #ffffff;
+  border-bottom-width: 34px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to top, #7abd70, #86d27b);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .header .header_img {
+    top: 0;
+  }
+}
