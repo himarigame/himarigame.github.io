@@ -112,7 +112,7 @@ body {
 }
 
 u {
-  text-decoration-color: white;
+  text-decoration-color: white !important;
 }
 
 @media screen and (max-width: 800px) {
